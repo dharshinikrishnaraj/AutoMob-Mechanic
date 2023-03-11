@@ -11,24 +11,28 @@
     <!--------------------- CSS -------------------------------->
     <link rel="stylesheet" type="text/css" href="css/booking.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <ul>
-        <li><a href="home.html">AutoMob-Mechanic</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="appointment.html">Appointment</a></li>
-        <li><a href="booking.html">Booking</a></li>
-    </ul>
+    <ul id="top-nav">
+        <li id="nav-list"><a href="home.html"><i class="fa fa-automobile icon"></i>AutoMob-Mechanic</a></li>
+        <li class="nav-list-service"><a href="services.html">Services</a></li>
+        <li class="nav-list-booking"><a href="booking.html">Booking</a></li>
+        <li class="nav-list-mail"><a href="mailto: contact@automobile.co.in"><i class="fa fa-envelope icon"></i>contact@automobile.co.in</a></li>
+        <li class="nav-list-phone"><a href="tel: 999-999-9999"><i class="fa fa-phone icon"></i>999-999-9999</a></li>
+    </ul><br><br><br>
     <h1 style="text-align: center;"><ins>Book Your Service</ins></h1>
     <section>
         <form style="text-align: center;">
-            <!-----------------Name-->
-            <label for="name" id="name">Name</label><br>
+            <i class="fas fa-cloud">home</i>
+            <!-----------------Name--------------------------------->
+            <label for="name" >Name</label><br>
+            <i class="fas fa-band-aid"></i>
             <input type="text" placeholder="John Daub" required/><br>
-            <!-----------------Email-->
+            <!-----------------Email-------------------------------->
             <label for="email">Email Id</label><br>
             <input type="email" pattern="xyz@abc.com" required/><br>
-            <!-----------------Phone-->
+            <!-----------------Phone-------------------------------->
             <label for="phone">Phone Number</label><br>
             <select type="tel" required>
                 <option>+213</option>
@@ -37,7 +41,7 @@
                 <option>+61</option>
             </select>
             <input type="number" placeholder="9823322332" /><br>
-            <!-----------------Select Service-->
+            <!-----------------Select Service----------------------->
             <label for="service">Select Service</label><br>
             <select name="code">
                 <option selected>--Select--</option>
@@ -45,7 +49,7 @@
                 <option>Body Repair Service</option>
                 <option>Car care Service</option>
             </select><br> 
-            <!-----------------Car make-->
+            <!-----------------Car make----------------------------->
         <label for="make">Car Make</label><br>
         <input list="make" >
         <datalist >
@@ -56,14 +60,14 @@
             <option value="Tayota">
             <option>
         </datalist><br>
-        <!-----------------Fuel type-->
+        <!-----------------Fuel type--------------------------------->
         <label for="fuel">Fuel Type</label><br>
         <input type="radio" required/>Petrol
         <input type="radio" required/>Diesel
         <input type="radio" required/>LPG
         <input type="radio" required/>Others
         <br>
-        <!-----------------Kilometer-->
+        <!-----------------Kilometer--------------------------------->
         <label for="kilo">Kilometers Ran</label><br>
         <input type="number" required />
         </form>
