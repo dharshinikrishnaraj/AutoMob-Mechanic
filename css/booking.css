@@ -1,0 +1,11 @@
+#root{
+    font-family: 'Montserrat';
+}
+
+label{
+    float: left;
+}
+
+input{
+    float: left;
+}
